@@ -1,0 +1,19 @@
+.a4-sheet{
+    max-width: 210mm; 
+    min-height: 259mm;
+    min-width: 107mm; 
+    max-height: 259mm;
+}
+@media screen and (width < 500px){
+    .a4-sheet{
+    min-width: 90vw;
+}
+}
+
+@print{
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
