@@ -11,7 +11,7 @@ export default function ResumeHead({basicDetail}){
             </p>
         </div>
         <div >
-            <img className="  rounded-full box-content size-32 border-4 border-black" src={basicDetail.image===""? "https://images.unsplash.com/photo-1666852327656-5e9fd213209b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFzc3BvcnQlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500": basicDetail.image} ></img>
+            {basicDetail.image !=="" ? <img className="  rounded-full box-content size-32 border-4 border-black" src={basicDetail.image===""? "https://images.unsplash.com/photo-1666852327656-5e9fd213209b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFzc3BvcnQlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500": basicDetail.image} ></img>: null}
         </div>
     </div>
     );
